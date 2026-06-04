@@ -92,12 +92,8 @@
 
 <main class="page-shell">
   <header class="hero">
-    <div class="masthead">
-      <span>Cuaderno №01</span>
-      <span>Napoli · 2026</span>
-    </div>
     <h1>forno<span>.</span></h1>
-    <p class="subtitle">una calculadora honesta para masa de pizza napolitana</p>
+    <p class="subtitle">una calculadora para masa de pizza napolitana</p>
   </header>
 
   <div class="workspace">

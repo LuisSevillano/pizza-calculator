@@ -1,7 +1,7 @@
 <script>
   import { readPositiveInput } from '$lib/formatDough.js';
 
-  const hydrationPresets = [60, 65, 70, 75];
+  const hydrationPresets = [55, 60, 65, 70];
 
   let {
     balls = $bindable(),
@@ -23,6 +23,10 @@
   }
 
   function useCustomHydration() {
+    customHydration = true;
+  }
+
+  function updateCustomHydration() {
     customHydration = true;
   }
 </script>
@@ -62,26 +66,21 @@
           {preset}%
         </button>
       {/each}
-      <button type="button" class:active={customHydration} aria-pressed={customHydration} onclick={useCustomHydration}>
-        Otro
-      </button>
-    </div>
-    {#if customHydration}
-      <label class="field compact" for="custom-hydration">
-        <span>Hidratación personalizada</span>
-        <div class="unit-input">
-          <input
-            id="custom-hydration"
-            bind:value={hydrationPercent}
-            type="number"
-            min="40"
-            step="0.5"
-            inputmode="decimal"
-          />
-          <span>%</span>
-        </div>
+      <label class="custom-hydration" class:active={customHydration} for="custom-hydration">
+        <input
+          id="custom-hydration"
+          bind:value={hydrationPercent}
+          type="number"
+          min="40"
+          step="1"
+          inputmode="decimal"
+          aria-label="Hidratación personalizada"
+          onfocus={useCustomHydration}
+          oninput={updateCustomHydration}
+        />
+        <span>%</span>
       </label>
-    {/if}
+    </div>
   </div>
 
   <label class="field" for="salt-percent">
