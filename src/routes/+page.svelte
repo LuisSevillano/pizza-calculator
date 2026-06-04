@@ -34,25 +34,33 @@
 
 <main class="page-shell">
   <header class="hero">
-    <p class="eyebrow">Pizza Math</p>
-    <h1>Calculadora de masa napolitana 🍕</h1>
-    <p class="subtitle">Calcula harina, agua, sal y levadura para tus bollos, con o sin prefermento.</p>
+    <div class="masthead">
+      <span>Cuaderno №01</span>
+      <span>Napoli · 2026</span>
+    </div>
+    <h1>forno<span>.</span></h1>
+    <p class="subtitle">una calculadora honesta para masa de pizza napolitana</p>
   </header>
 
-  <DoughForm
-    bind:balls
-    bind:ballWeight
-    bind:hydrationPercent
-    bind:customHydration
-    bind:saltPercent
-    bind:usePoolish
-    bind:poolishFlour
-    bind:poolishWater
-    bind:poolishYeast
-    bind:directYeast
-  />
+  <div class="workspace">
+    <DoughForm
+      bind:balls
+      bind:ballWeight
+      bind:hydrationPercent
+      bind:customHydration
+      bind:saltPercent
+      bind:usePoolish
+      bind:poolishFlour
+      bind:poolishWater
+      bind:poolishYeast
+      bind:directYeast
+    />
 
-  <DoughResults {result} {usePoolish} />
+    <DoughResults {result} {usePoolish} />
+  </div>
 
-  <footer>Pensado para pizza napolitana casera.</footer>
+  <footer>
+    <span>© 2026 — un proyecto personal</span>
+    <span>hecho a mano, no a máquina</span>
+  </footer>
 </main>

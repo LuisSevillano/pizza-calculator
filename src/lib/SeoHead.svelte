@@ -3,7 +3,7 @@
   const description = 'Calcula harina, agua, sal y levadura para masa de pizza napolitana, con o sin prefermento.';
   const siteName = 'Pizza Math';
   const siteUrl = 'https://luissevillano.github.io/pizza-calculator/';
-  const imageUrl = `${siteUrl}og.svg`;
+  const imageUrl = `${siteUrl}og.jpg`;
 </script>
 
 <svelte:head>
@@ -23,7 +23,7 @@
   <meta property="og:description" content={description} />
   <meta property="og:url" content={siteUrl} />
   <meta property="og:image" content={imageUrl} />
-  <meta property="og:image:type" content="image/svg+xml" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Pizza Math, calculadora de masa napolitana" />

@@ -29,6 +29,7 @@
 
 <section class="card" aria-labelledby="inputs-title">
   <div class="section-heading">
+    <span class="section-number">01</span>
     <h2 id="inputs-title">Datos de la masa</h2>
     <p>Cantidades finales redondeadas para pesar fácilmente.</p>
   </div>

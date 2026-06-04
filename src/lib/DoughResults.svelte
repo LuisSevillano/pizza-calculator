@@ -7,6 +7,7 @@
 
 <section class="card results-card" aria-labelledby="results-title" aria-live="polite">
   <div class="section-heading">
+    <span class="section-number">02</span>
     <h2 id="results-title">Receta calculada</h2>
     <p>Masa final: {roundGram(result.summary.totalMass)}</p>
   </div>
@@ -36,7 +37,7 @@
     <div class="result-block">
       <h3>Añadir después</h3>
       <p class="process-note">
-        Después, añade el resto de ingredientes y deja reposar otras 24 h. Saca la masa, divide en bolas y deja
+        A continuación, añade el resto de ingredientes y deja reposar otras 24 h. Después, saca la masa, divide en bolas y deja
         reposar a temperatura ambiente unas 2-3 h, según la temperatura.
       </p>
       <IngredientRow icon="grain" label="Harina" value={roundGram(result.finalAdditions.flour)} />
